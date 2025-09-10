@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Modal Dialog Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-card">
+    <h2>Modal Dialog Example</h2>
+    <button class="modal-btn" id="openModalBtn">Open Modal</button>
+    <div class="features">
+      <div class="feature">
+        <span>&lt;/&gt;</span>
+        Vanilla JS<br /><small>No frameworks</small>
+      </div>
+      <div class="feature">
+        <span>📱</span>
+        Responsive<br /><small>Works on all devices</small>
+      </div>
+      <div class="feature">
+        <span>✍</span>
+        Modern UI<br /><small>Clean and effective</small>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Overlay -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modalDialog">
+      <div class="modal-title-box">Welcome to the Modal!</div>
+        <p>this is completely custom modal dialog built from scratch using only HTML,CSS and Vanilla JavaScript</p>
+      <ul>
+        <li>Easy to customize</li>
+        <li>Works anywhere</li>
+        <li>Styled with CSS only</li>
+        <li>No dependencies</li>
+      </ul>
+      <div class="modal-btn-row">
+        <button class="close-btn" id="closeModalBtn">Close</button>
+        <button class="continue-btn" id="continueBtn">Continue</button>
+      </div>
+    </div>
+    <div id="closingMessageBelow" style="display:none;"></div>
+  </div>
+  <!-- FAQ Accordion -->
+  <div class="faq-container">
+    <h2>FAQ</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-toggle">What is this system?</button>
+        <div class="accordion-content">
+          This demo shows a modal dialog and a collapsible FAQ, built with <strong>vanilla JS</strong>, HTML, and CSS.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-toggle">How is the modal built?</button>
+        <div class="accordion-content">
+          The modal uses a hidden overlay and dialog box, displayed with simple JS and styled using CSS.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-toggle">Can I use frameworks?</button>
+        <div class="accordion-content">
+          No frameworks are used here—just pure HTML, CSS, and JavaScript!
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
